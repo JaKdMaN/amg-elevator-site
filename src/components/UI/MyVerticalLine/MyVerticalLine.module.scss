@@ -1,0 +1,13 @@
+.vertical-line{
+  width: 2px;
+  max-height: 100%;
+  background:#D0B576;
+  margin: 0 65px;
+  padding: 0;
+
+  @media screen and (max-width:998px) {
+    width: 100px;
+    height: 2px;
+    margin: 20px auto;
+  }
+}

@@ -1,0 +1,31 @@
+.button {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    line-height: 1;
+    padding: 15px 30px;
+    border: 2px solid #D0B576;
+    transition: all .3s ease;
+
+    &:hover {
+      background: #D0B576;
+      border-radius: 3px;
+      color: #FFFFFF;
+    }
+
+    @media screen and (max-width: 998px) {
+      margin: 0 auto;
+      font-size: 20px;
+      padding: 15px 70px;
+    }
+
+  }
+
+}
+
+.WithArrow {
+  padding: 20px;
+}

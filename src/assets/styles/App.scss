@@ -1,0 +1,59 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+html,
+body {
+  font-family: 'Montserrat';
+  background: linear-gradient(180deg, #282B30 0%, #16171B 100%) no-repeat;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.accent-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #C8C8C8;
+
+  @media screen and (max-width: 998px) {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}

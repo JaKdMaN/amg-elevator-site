@@ -1,0 +1,35 @@
+.wrapper {
+  width: 30px;
+
+  .burger {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 25px;
+    height: 15px;
+    margin: 0 auto;
+
+    &__line {
+      width: 100%;
+      height: 3px;
+      background: #D0B576;
+      transition: width .250s ease;
+    }
+  }
+
+  .burgerActive {
+    width: 15px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .burger__line {
+      width: 3px;
+      height: 100%;
+      margin: 0;
+      transition: height .250s ease;
+    }
+  }
+}
+

@@ -1,0 +1,22 @@
+.industries{
+	padding-top: 100px;
+
+	@media screen and (max-width:998px) {
+		padding-top: 75px;
+	}
+
+	&__image{
+		text-align: center;
+
+		img{
+			max-width: 100%;
+			max-height: 100%;
+			object-fit: cover;
+		}
+
+		@media screen and (max-width: 998px){
+			width: 100%;
+			margin: 30px auto 0 auto;
+		}
+	}
+}

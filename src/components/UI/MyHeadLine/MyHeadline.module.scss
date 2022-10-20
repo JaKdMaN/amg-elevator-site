@@ -1,0 +1,52 @@
+.headline{
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 35px;
+	line-height: 49px;
+	margin-bottom: 20px;
+
+	@media screen and (max-width:998px) {
+		text-align: center;
+		font-size: 25px;
+		line-height: 37px;
+	}
+}
+
+.have-image{
+	background: url("./../../../assets/images/reach-up-bg.png");
+	-webkit-background-clip:text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 800;
+	font-size: 80px;
+	line-height: 98px;
+	text-transform: uppercase;
+	margin-top: 95px;
+
+	&:after{
+		display: block;
+		content: '';
+		width: 90px;
+		height: 2px;
+		background:#D0B576;
+		margin-top: 20px;
+
+		@media screen and(max-width:998px) {
+			margin: 20px auto 0 auto;
+		}
+	}
+
+	@media screen and (max-width:1200px) {
+		margin-top: 50px;
+	}
+
+	@media screen and (max-width:998px) {
+		font-size: 60px;
+		line-height: 60px;
+	}
+
+	@media screen and (max-width:767px) {
+		text-align: center;
+		font-size: 45px;
+		line-height: 55px;
+	}
+}

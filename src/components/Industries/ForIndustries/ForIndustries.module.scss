@@ -1,0 +1,76 @@
+.forIndustries {
+  margin-top: 150px;
+
+  @media screen and (max-width: 998px) {
+    margin-top: 75px;
+  }
+
+  &__items {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+  &__item {
+    width: 170px;
+    height: 120px;
+
+    position: relative;
+    z-index: 1;
+
+    border-radius: 8px;
+    box-shadow: 14px 14px 30px rgba(16, 16, 18, 0.75), -7px -7px 30px #262E32;
+    text-align: center;
+    transition: all .3s ease-in-out;
+
+    @media screen and (max-width: 1400px){
+      margin: 10px 0;
+    }
+
+    @media screen and (max-width: 998px) {
+      width: 120px;
+      height: 70px;
+    }
+
+    @media screen and(max-width: 767px) {
+      box-shadow: 5px 5px 15px rgba(16, 16, 18, 0.75), -5px -5px 15px #262E32;
+    }
+
+    &:hover {
+      scale: 1.1;
+    }
+
+    & .title {
+      padding: 50px 10px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+
+      @media screen and (max-width: 998px) {
+        padding: 24px 6px;
+        font-size: 13px;
+      }
+    }
+
+    & .backUrl {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      z-index: -100;
+    }
+  }
+
+}
+
+
+.arrowsIcon {
+  // color: #D0B576;
+  margin-top: 5px;
+}

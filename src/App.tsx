@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Main from './components/Main/Main';
+import Industries from './components/Industries/Industries';
+import Options from "./components/options/Options";
+import Gallery from "./components/Gallery/Gallery";
+import Patreon from "./components/Patreon/Patreon";
+import Questions from "./components/Questions/Questions";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+
+import "@assets/styles/App.scss"
+import 'swiper/css/bundle'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <Header/>
+            <Main/>
+            <Industries/>
+            <Options/>
+            <Gallery/>
+            <Patreon/>
+            <Questions/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;
